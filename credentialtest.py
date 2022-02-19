@@ -17,9 +17,18 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_credential.password, "password")
         self.assertEqual(self.new_credential.email, "email@gmail.com")
     """
-    save credential
+     function that save new user credential
     """
     def test_save_cred(self):
 
         self.new_credential.save_credentials()
         self.assertEqual(len(Credential.credentials_array), 1)
+    """
+     function that displays users credentials
+    """
+    def test_display_credentials(self):
+
+        self.assertEqual(Credential.display_credentials(), Credential.credentials_array)
+
+if __name__ == '__main__':
+    unittest.main()

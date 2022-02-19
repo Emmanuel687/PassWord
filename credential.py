@@ -12,3 +12,10 @@ class Credential:
     def save_credentials(self):
 
         Credential.credentials_array.append(self)
+    """
+    function that displays user credentials
+    """
+    @classmethod
+    def display_credentials(cls):
+
+        return cls.credentials_array  

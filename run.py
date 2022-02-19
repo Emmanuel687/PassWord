@@ -19,3 +19,14 @@ def create_credential(username, psword, email):
     new_credential = Credential(username,psword,email)
     return new_credential    
 
+def save_user(user):
+
+    user.save_user_details()
+
+
+def save_cred(credential):
+    """
+    Saves users'credentials
+    """
+    credential.save_credential()
+

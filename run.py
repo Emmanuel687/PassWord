@@ -44,6 +44,12 @@ def del_cred(credential):
 
 def display_user():
     """
-    Function that returns saved users
+    This Function that returns saved users
     """
     return User.display_users()
+
+def display_cred():
+    """
+    function that returns saved user credentials
+    """
+    return Credential.display_credential()

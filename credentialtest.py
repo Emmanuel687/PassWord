@@ -5,7 +5,7 @@ class TestUser(unittest.TestCase):
 
     def setUp(self):
 
-        self.new_credential = Credential("user_name", "password","email@gmail.com")
+        self.new_credential = Credential("userName", "password","email@gmail.com")
 
     def tearDown(self):
 

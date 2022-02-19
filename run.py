@@ -26,7 +26,14 @@ def save_user(user):
 
 def save_cred(credential):
     """
-    Saves users'credentials
+    This function Saves users'credentials
     """
     credential.save_credential()
+
+def del_user(user):
+    """
+    Function to delete a user
+    """
+    user.delete_user()
+
 

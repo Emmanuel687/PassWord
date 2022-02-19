@@ -86,7 +86,7 @@ def main():
             psword = input()
 
             save_user(create_user(full_name,email,mobile_number))   
-            # save_cred(create_credential(user_name,psword,email))
+            
             print('\n')
             print(f"A new{account} has been created by {full_name}")
             print(f" The username is {user_name} and password {psword} ")
